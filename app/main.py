@@ -48,4 +48,5 @@ def test_page():
 
 
 if __name__ == '__main__':
+    WeatherRequestsManager.create_table()
     app.run(debug=True)
