@@ -63,12 +63,4 @@ class WeatherRequestsManager:
             return 0
 
 
-# Пример использования
 WeatherRequestsManager.create_table()
-# Погода для города Москва: ...
-print(WeatherRequestsManager.increase_request_counter("Москва"))
-# Погода для города Москва: ...
-print(WeatherRequestsManager.increase_request_counter("Москва"))
-# Погода для города Санкт-Петербург: ...
-print(WeatherRequestsManager.increase_request_counter("Санкт-Петербург"))
-WeatherRequestsManager.decrease_request_count("Москва")
