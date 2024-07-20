@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.env
+.venv
+.git
+
+# Исключаем файлы конфигурации IDE и другие временные файлы
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
