@@ -1,0 +1,252 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+.container {
+    display: flex;
+    height: 620px;
+    gap: 35px; 
+}
+
+.weather-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+    width: 400px;
+    margin:  0px 100px 0px 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #8ABCEE;
+}
+
+.today-card {
+    border-radius: 12px;
+    padding:27px 32px;
+    width: 470px;
+    height: 100%;
+    background: url('../images//minimalism-blurred-colorful-abstract-2194915.png');
+    background-size: cover;
+        /* Изображение будет масштабироваться, чтобы покрыть весь контейнер */
+        background-repeat: no-repeat;
+        /* Избегаем повторения изображения */
+        display: flex;
+        flex-direction: column;
+}
+
+.today-card-container {
+    display: flex;
+        flex-direction: column;
+        align-items:center;
+}
+
+.today-card-header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:20px;
+    color: #FFF;
+}
+.today-card-weather-detail {
+    display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 5px;
+}
+.today-card-weather {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    gap: 10px;
+}
+.today-card-cloud {
+    display: flex;
+        flex-direction: column;
+}
+.today-card-cloud img {
+        position: static;
+}
+
+.today-card-title {
+    font-size: 32px;
+    color: #FFF;
+    font-family: 'Inter', regular;
+    margin-bottom: 10px;
+}
+.today-card-descr {
+    font-size: 24px;
+        color: #FFF;
+        font-family: 'Inter', regular;
+}
+
+.today-card-date {
+    font-size: 24px;
+        color: #D9D9D9;
+        font-family: 'Inter', regular;
+}
+.today-card-cloud-temp {
+    font-size: 48px;
+        color: #FFF;
+        font-family: 'Inter', regular;
+        padding-left: 23px;
+}
+
+.today-card-body {
+    margin-top: 10px;
+    display:flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        flex: 1 1 auto;
+}
+
+.today-card-body-cart-detail {
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+    align-items:center;
+        font-family: 'Inter', regular;
+        font-size: 20px;
+        padding: 0 12px;
+        border-radius: 12px;
+        background:rgba(217, 217, 217,0.5);
+}
+
+.weather-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.day-cast-card {
+    background-color: #D9D9D9;
+    width: 510px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.rotate-rectangle {
+    width: 128px;
+    height: 233px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(40deg);
+    transform: translate(-25%, -50%) rotate(-18deg);
+}
+.date {
+    transform: translate(-25%, -50%) rotate(-18deg);
+    z-index: 10;
+}
+.day {
+    width: 72px;
+    background-color: #D0F1F9;
+    transform: translate(140%, -50%) rotate(-18deg);
+    z-index: 8;
+}
+.night {
+    width: 72px;
+    background-color: #2A445C;
+    transform: translate(240%, -50%) rotate(-18deg);
+    z-index: 7;
+}
+.sun {
+    border-radius: 50%;
+    background-color: #FFD976;
+    z-index: 9;
+    height: 67px;
+    width: 67px;
+    position: absolute;
+    transform: translate(-30%, 100%)
+
+}
+
+.moon {
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    z-index: 9;
+    height: 67px;
+    width: 67px;
+    position: absolute;
+    transform: translate(-30%, 100%)
+}
+.date-text {
+    transform: translate(1%, 100%);
+    z-index: 11;
+    color: black;
+    position: relative;
+    font-family: 'Inter', regular   ;
+    font-size: 32px;
+    color: #2A445C;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+}
+
+img {
+    position: absolute;
+    transform: translate(0%, 0%);
+    z-index: 12;
+}
+.temp-day {
+    transform: translate(110px, 0%);
+    z-index: 11;
+    position: absolute;
+    font-family: 'Inter', regular;
+    font-size: 32px;
+    color: #2A445C;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+}
+
+.temp-night {
+    transform: translate(185px, 0%);
+    z-index: 11;
+    color: #D9D9D9;
+    position: absolute;
+    font-family: 'Inter', regular;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+}
+.descr-container {
+    position: realtive;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1px;
+    transform: translate(-5%, -50%);
+}
+
+.descr {
+    font-family: 'Inter', regular;
+    font-size: 18px;
+    position: relative;
+    z-index: 11;
+    color: #2A445C;
+}
+
+.precipitation {
+}
+
+.wind-speed {
+    
+}

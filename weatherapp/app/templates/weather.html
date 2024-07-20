@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <h1>7-Day Weather Forecast in city {{ city.name }}</h1>
+    <div class="weather-container">
+        {% for day in forecast %}
+        <div class="weather-card">
+            <p class = 'day'>{{ day.day }}</p>
+            <img src="http://openweathermap.org/img/w/.png" alt="{{ day.description }}">
+            <p class="max-t">{{ day.temperature_2m_max }}°C </p>
+            <p class="min-t">{{ day.temperature_2m_min }}°C</p>
+            <p>Вероятность осадков: {{ day.precipitation_probability_mean }} %</p>
+            <p>Скорость ветра: {{ day.temperature_2m_min }} м/с</p>
+            <p>Порывы ветра до: {{ day.temperature_2m_min }} м/с</p>
+            <p>Направление ветра: {{ day.temperature_2m_min }}°</p>
+        </div>
+        {% endfor %}
+    </div>
+    <button>Назад</button>
+</body>
+
+</html>
