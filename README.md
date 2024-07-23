@@ -20,7 +20,7 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/ваш-проект/weatherapp.git
+git clone https://github.com/Sapdotten/weatherapp.git
 cd weatherapp
 ```
 
