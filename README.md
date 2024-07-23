@@ -43,7 +43,7 @@ docker run -p 5000:5000 weather-app
 ## Инструкция по запуску без использования Docker
 ### 1. Клонируйте репозиторий
 ```bash
-git clone https://github.com/ваш-проект/weatherapp.git
+git clone https://github.com/Sapdotten/weatherapp.git
 cd weatherapp
 ```
 ### 2. Создайте виртуальное окружение
